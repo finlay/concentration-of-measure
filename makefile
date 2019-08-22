@@ -2,7 +2,7 @@ IMAGE := docker.dragonfly.co.nz/concentration-of-measure
 RUN :=
 
 
-plot.gif: plot.r data.rds
+plot.pdf: plot.r data.rds
 	$(RUN) Rscript $<
 
 data.rds: data.r

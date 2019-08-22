@@ -3,7 +3,7 @@ library(data.table)
 ## Randomly generate normally distributed matrix
 
 cols <- 100
-rows <- 1e5
+rows <- 1e3
 
 make.lengths <- function(cols, rows) {
     mat <- matrix(rnorm(cols * rows), ncol=cols)
